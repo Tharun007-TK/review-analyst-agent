@@ -68,3 +68,7 @@ def test_run_analysis_agent_validates_schema(mock_serpapi):
         
     except Exception as e:
         pytest.fail(f"Output JSON does not match ReviewAnalysis schema. Validation Error: {e}")
+
+if __name__ == "__main__":
+    # Allows running with: python test_agent.py
+    pytest.main([__file__, "-v"])

@@ -4,3 +4,4 @@ streamlit
 google-search-results
 pydantic
 python-dotenv
+pytest
