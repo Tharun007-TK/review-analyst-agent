@@ -16,7 +16,7 @@ def run_analysis_agent(user_query: str) -> str:
     create_agent API, then analyzes with the analyzer chain and validates via Pydantic.
     """
     # 1. Initialize the Groq LLM
-    model_name = os.getenv("GROQ_MODEL", "llama-3.1-8b-instant")
+    model_name = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
     llm = ChatGroq(model_name=model_name, temperature=0.1)
 
     # 2. Create the agent using the new create_agent API (LangChain v1.2+ / LangGraph)
